@@ -25,7 +25,7 @@ const LoginForm = () => {
 
         axios
             .post(
-                'http://localhost:8080/SpringReact/member/login',
+                'http://211.188.50.231:8090/SpringReact/member/login',
                 { id, pwd },
                 { withCredentials: true }
             )

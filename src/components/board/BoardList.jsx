@@ -9,7 +9,7 @@ const BoardList = () => {
 
     useEffect(() => {
         axios
-            .get('http://localhost:8080/SpringReact/board/boardList')
+            .get('http://211.188.50.231:8090/SpringReact/board/boardList')
             .then(response => {
                 console.log(response.data);
                 setList(response.data);
