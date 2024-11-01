@@ -45,7 +45,7 @@ const BoardWriteForm = () => {
         // 두 번째 인자: **본문 데이터 (data)**로 보낼 객체. POST 요청에서 이 자리에 데이터를 넣어 보냅니다.
         // 세 번째 인자: 추가적인 설정 (config) 객체로, headers, params 등이 포함됩니다.        
         axios
-            .post('http://localhost:8080/SpringReact/board/boardWrite', null, {
+            .post('http://211.188.50.231:8090/SpringReact/board/boardWrite', null, {
                 params: boardData,
                 withCredentials: true
             })

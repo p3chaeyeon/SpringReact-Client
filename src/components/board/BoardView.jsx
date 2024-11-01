@@ -13,7 +13,7 @@ const BoardView = () => {
     useEffect(() => {
         // seq에 해당하는 게시물 상세 정보 요청
         axios
-            .get(`http://localhost:8080/SpringReact/board/boardView?seq=${seq}`)
+            .get(`http://211.188.50.231:8090/SpringReact/board/boardView?seq=${seq}`)
             .then((response) => {
                 console.log(response.data);
                 setBoard(response.data); // 게시물 데이터 설정
